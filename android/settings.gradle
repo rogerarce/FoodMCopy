@@ -1,0 +1,3 @@
+rootProject.name = 'crispmobile'
+
+include ':app'
