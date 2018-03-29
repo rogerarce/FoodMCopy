@@ -6,9 +6,7 @@ import data from '../lib/data'
 class Dashboard extends Component {
   render() {
     return (
-      <View>
-        <Text>Dashboard Display</Text>
-        <Button onPress={() => console.info('asda')} title="Search nearest treats..." />
+      <View style={{ backgroundColor: '#F2F2F2', flex: 1 }}>
         <ProductListing products={data} />
       </View>
     )
