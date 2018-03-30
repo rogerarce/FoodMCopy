@@ -1,12 +1,16 @@
 import React, { Component } from 'react'
-import { View, Text } from 'react-native'
+import { View, Text, FlatList, Image, Button } from 'react-native'
+import ProductListing from '../components/ProductListing/'
+import data from '../lib/data'
 
-export default class Dashboard extends Component {
+class Dashboard extends Component {
   render() {
     return (
-      <View>
-        <Text>Dashboard</Text>
+      <View style={{ backgroundColor: '#F2F2F2', flex: 1 }}>
+        <ProductListing products={data} />
       </View>
     )
   }
 }
+
+export default Dashboard
