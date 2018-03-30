@@ -15,6 +15,7 @@ const ProductListing = ({ products }) => {
         data={products}
         keyExtractor={(item) => item.name}
         renderItem={({ item }) => <Product {...item} />}
+        showsHorizontalScrollIndicator={false}
         ItemSeparatorComponent={ListSeparator}
         ListFooterComponent={ListFooter}
       />
