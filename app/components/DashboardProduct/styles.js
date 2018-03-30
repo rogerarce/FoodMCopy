@@ -28,7 +28,7 @@ export default {
     alignSelf: 'flex-end',
     justifyContent: 'center',
     position: 'absolute',
-    top: '50%',
+    top: '45%',
     right: 20,
   },
 
@@ -46,10 +46,5 @@ export default {
   bottom: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-  },
-
-  text: {
-    fontSize: 20,
-    color: '#000000',
   },
 }

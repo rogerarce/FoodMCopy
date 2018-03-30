@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import { View, Text, Image } from 'react-native'
+import LabelText from '../LabelText/'
 import styles from './styles'
 
 const Product = ({ id, name, img, description, prep_time, price }) => (
@@ -12,11 +13,11 @@ const Product = ({ id, name, img, description, prep_time, price }) => (
       <Text style={styles.asideTxt}>{price}</Text>
     </View>
     <View style={styles.body}>
-      <Text>{name}</Text>
-      <Text>{description}</Text>
+      <LabelText title={name}/>
+      <LabelText title={description} style='muted' />
       <View style={styles.bottom}>
-        <Text style={styles.text}>Store Name</Text>
-        <Text style={styles.text}>{prep_time}</Text>
+        <LabelText title="Store Name" />
+        <LabelText title={prep_time} />
       </View>
     </View>
   </View>
