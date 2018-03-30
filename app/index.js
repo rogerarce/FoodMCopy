@@ -1,13 +1,19 @@
 import React from 'react'
-import { TabNavigator, TabBarBottom } from 'react-navigation'
+import { DrawerNavigator, TabNavigator, StackNavigator, TabBarBottom } from 'react-navigation'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import Dashboard from './screens/Dashboard'
 import Store from './screens/Store'
 import Basket from './screens/Basket'
 
-const Screens = {
+const DashboardStack = StackNavigator({
   Dashboard: {
-    screen: Dashboard, 
+    screen: Dashboard,
+  }
+})
+
+const tabNav = TabNavigator({
+  Dashboard: {
+    screen: DashboardStack, 
   },
   Basket: {
     screen: Basket,
@@ -15,9 +21,7 @@ const Screens = {
   Store: {
     screen: Store,
   },
-}
-
-export default TabNavigator(Screens, {
+}, {
   tabBarComponent: TabBarBottom,
   tabBarPosition: "bottom",
   tabBarOptions: {
@@ -31,4 +35,14 @@ export default TabNavigator(Screens, {
       backgroundColor: '#F77272',
     },
   },
+})
+
+export default DrawerNavigator({
+  DrawerItem: {
+    screen: tabNav,
+    navigationOptions: {
+      drawerLabel: "Settings",
+      drawerIcon: ({ tintColor }) => <Ionicons name="ios-settings" size={25} />
+    }
+  }
 })
