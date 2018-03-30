@@ -4,7 +4,7 @@ let { width } = Dimensions.get('window')
 
 export default StyleSheet.create({
   separator: {
-    height: 5,
+    height: 2,
     width: width,
     backgroundColor: '#CED0CE',
   }
