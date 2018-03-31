@@ -6,13 +6,6 @@ import Product from '../components/BasketProduct/'
 import data from '../lib/basket'
 
 class Basket extends Component {
-  static navigationOptions = {
-    tabBarIcon: ({ focused, tintColor }) => {
-      let icon = focused ? 'ios-basket' : 'ios-basket-outline'
-      return <Ionicons name={icon} size={25} color={tintColor} />
-    }
-  }
-
   render() {
     return (
       <View>

@@ -8,12 +8,6 @@ import data from '../lib/data'
 import store from '../lib/storedummydata'
 
 class Store extends Component {
-  static navigationOptions = {
-    tabBarIcon: ({ focused, tintColor }) => {
-      let icon = focused ? 'ios-restaurant' : 'ios-restaurant-outline'
-      return <Ionicons name={icon} size={25} color={tintColor} />
-    }
-  }
 
   render() {
     return (
