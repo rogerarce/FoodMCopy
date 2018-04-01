@@ -8,7 +8,7 @@ class Settings extends Component {
       <View style={styles.container}>
         <View style={styles.header}>
           <View>
-            <Ionicons name="ios-settings" size={25} color="#000" />
+            <Ionicons name="ios-switch" size={25} color="#000" />
           </View>
         </View>
         <View style={styles.body}>
@@ -45,12 +45,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     alignContent: 'space-between',
-    backgroundColor: '#C24B48',
+    backgroundColor: '#fff',
     padding: 20,
   },
   body: {
     height: height,
-    backgroundColor: '#fff',
+    backgroundColor: '#e0dede',
     padding: 20,
   },
   label: {

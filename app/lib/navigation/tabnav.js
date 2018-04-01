@@ -4,6 +4,7 @@ import Ionicons from 'react-native-vector-icons/Ionicons'
 import StackNavs from './stacknav'
 import Basket from '../../screens/Basket'
 import Profile from '../../screens/Profile'
+import colors from '../styles/colors'
 
 export default TabNavigator({
   Main: {
@@ -46,13 +47,13 @@ export default TabNavigator({
   tabBarPosition: "bottom",
   tabBarOptions: {
     showIcon: true,
-    activeTintColor: '#fff',
-    inactiveTintColor: '#eee',
+    activeTintColor: colors.gray,
+    inactiveTintColor: colors.dark,
     labelStyle: {
       fontSize: 10,
     },
     style: {
-      backgroundColor: '#F77272',
+      backgroundColor: colors.light,
     },
   },
 })
