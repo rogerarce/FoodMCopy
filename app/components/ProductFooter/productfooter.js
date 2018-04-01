@@ -3,7 +3,7 @@ import { View, Text, Button } from 'react-native'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import styles from './styles'
 
-const ProductFooter = () => {
+const ProductFooter = ({ navigation }) => {
   return (
     <View style={styles.container}>
       <View style={styles.content}>
@@ -18,7 +18,10 @@ const ProductFooter = () => {
           </View>
       </View>
       <View style={styles.footer}>
-        <Button title="Add to basket" onPress={() => console.log('f')}/>
+        <Button title="Add to basket" onPress={() => console.log('f')} />
+      </View>
+      <View style={styles.footer}>
+        <Button title="Continue Shopping" onPress={() => navigation.navigate("Store")} />
       </View>
     </View>
   )

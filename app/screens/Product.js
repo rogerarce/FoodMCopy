@@ -21,7 +21,7 @@ class Product extends Component {
       <View>
         <ProductHeader uri={product.img} price={product.price} />
         <ProductContent name={product.name} description={product.description} />
-        <ProductFooter />
+        <ProductFooter navigation={this.props.navigation} />
       </View>
     )
   }

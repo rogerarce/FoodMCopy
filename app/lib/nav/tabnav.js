@@ -2,8 +2,8 @@ import React from 'react'
 import { TabNavigator, TabBarBottom } from 'react-navigation'
 import Ionicons from 'react-native-vector-icons/Ionicons'
 import StackNavs from './stacknav'
-import Basket from '../screens/Basket'
-import Profile from '../screens/Profile'
+import Basket from '../../screens/Basket'
+import Profile from '../../screens/Profile'
 
 export default TabNavigator({
   Main: {
