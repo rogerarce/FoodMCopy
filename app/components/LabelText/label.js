@@ -7,35 +7,34 @@ const LabelText = ({ title, style = 'label' }) => {
 
 const styles = StyleSheet.create({ 
   label: {
-    fontSize: 20,
-    fontWeight: '100',
-    fontFamily: 'Roboto',
+    fontSize: 19,
+    fontFamily: 'Rigtheous-Regular',
     color: '#323333',
   },
   
   pricing: {
-    fontSize: 20,
+    fontSize: 15,
     fontWeight: '200',
-    fontFamily: 'Righteous',
+    fontFamily: 'Raleway-Thin',
     color: '#323333',
   },
   
   label1: {
     fontSize: 15,
     fontWeight: '100',
-    fontFamily: 'Roboto',
+    fontFamily: 'Raleway-Thin',
     color: '#323333',
   },
   
   muted: {
     fontSize: 13,
-    fontFamily: 'Roboto',
+    fontFamily: 'Raleway-Thin',
     color: '#BFC1C2',
   },
 
   large: {
-    fontSize: 24,
-    fontFamily: 'Roboto',
+    fontSize: 19,
+    fontFamily: 'Raleway-Thin',
     color: '#323333',
   },
 })

@@ -21,21 +21,22 @@ export default {
   },
 
   aside: {
-    width: 70,
-    height: 70,
-    backgroundColor: '#FF8C8C',
+    width: 60,
+    height: 60,
+    backgroundColor: '#fff',
     borderRadius: 75,
     alignSelf: 'flex-end',
     justifyContent: 'center',
     position: 'absolute',
-    top: '45%',
+    top: '50%',
     right: 20,
   },
 
   asideTxt: {
     alignSelf: 'center',
-    fontSize: 35, 
-    color: '#fff',
+    fontSize: 25, 
+    fontFamily: 'Raleway-Thin',
+    color: '#222',
   },
 
   body: {

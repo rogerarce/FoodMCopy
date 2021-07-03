@@ -1,10 +1,4 @@
 import React from 'react'
-import Dashboard from './screens/Dashboard'
-import Store from './screens/Store'
-import Basket from './screens/Basket'
+import DrawerNavigator from './lib/navigation/drawernav'
 
-export default class App extends React.Component {
-  render() {
-    return <Dashboard />
-  }
-}
+export default DrawerNavigator

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { View, FlatList, Button, Image } from 'react-native'
+import Ionicons from 'react-native-vector-icons/Ionicons'
 import LabelText from '../components/LabelText/'
 import Product from '../components/BasketProduct/'
 import data from '../lib/basket'

@@ -8,13 +8,14 @@ import styles from './styles'
 
 let { width } = Dimensions.get('window')
 
-const ProductListing = ({ products }) => {
+const ProductListing = ({ products, navigation }) => {
   return (
     <View style={styles.container}>
       <FlatList
         data={products}
         keyExtractor={(item) => item.name}
-        renderItem={({ item }) => <Product {...item} />}
+        renderItem={({ item }) => <Product {...item} navigation={navigation} />}
+        showsHorizontalScrollIndicator={false}
         ItemSeparatorComponent={ListSeparator}
         ListFooterComponent={ListFooter}
       />
